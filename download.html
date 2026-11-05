@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>下载面试助手（Windows / Mac 测试版）</title>
+    <meta
+      name="description"
+      content="下载面试助手 Windows 版或 Mac 测试版（Apple 芯片 / Intel），以及领取授权的方法。"
+    />
+    <link rel="icon" href="assets/mark.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="assets/site.css?v=f277f8000c8c" />
+    <script>
+      document.documentElement.classList.add('js');
+    </script>
+  </head>
+  <body>
+    <a class="skip" href="#content">跳到正文</a>
+    <header class="site-header">
+      <a class="brand" href="index.html"
+        ><span class="brand-mark"
+          ><svg viewBox="0 0 24 24" aria-hidden="true">
+            <rect x="9" y="3" width="6" height="11" rx="3" />
+            <path d="M6 11a6 6 0 0 0 12 0M12 17v4" /></svg></span
+        >面试助手<span class="brand-tag">内测版 1</span></a
+      >
+      <nav class="site-nav" aria-label="主导航">
+        <a href="index.html">首页</a><a href="download.html" aria-current="page">下载</a
+        ><a href="manual.html">使用手册</a><a href="faq.html">常见问题</a
+        ><a href="known-issues.html">已知问题</a><a class="nav-cta" href="license.html">获取授权</a>
+      </nav>
+    </header>
+    <main id="content">
+      <div class="wrap">
+        <header class="page-head">
+          <h1>下载面试助手</h1>
+          <p class="lede">
+            安装包免费下载，需要领取授权后才能使用。用自己的 API Key 时，AI
+            服务费用由所选服务另计。内测用户可以先用维护者提供的体验额度，不需要自己付费，额度由所有内测用户共用。
+          </p>
+        </header>
+
+        <div class="platforms">
+          <article class="platform" data-platform="win">
+            <div class="platform-top">
+              <h2>Windows</h2>
+              <span class="yours-flag">你的电脑</span>
+            </div>
+            <p class="req">Windows 10 或 11，64 位</p>
+            <a
+              class="btn btn-primary"
+              data-dl="win"
+              data-ready="下载 Windows 版"
+              aria-disabled="true"
+              href="#"
+              ><span class="label">即将开放</span><span class="size"></span
+            ></a>
+          </article>
+
+          <article class="platform" data-platform="mac">
+            <div class="platform-top">
+              <h2>Mac <span class="beta-tag">测试版</span></h2>
+              <span class="yours-flag">你的电脑</span>
+            </div>
+            <p class="req">macOS 14.2 或更新</p>
+            <div class="chip-help">
+              <p>先看芯片：点屏幕左上角的苹果图标，选“关于本机”。</p>
+              <ul>
+                <li>“芯片”写着 Apple M1、M2、M3、M4 等，选 <strong>Apple 芯片</strong></li>
+                <li>“处理器”写着 Intel，选 <strong>Intel</strong></li>
+              </ul>
+            </div>
+            <div class="mac-buttons">
+              <a
+                class="btn btn-primary"
+                data-dl="mac-arm"
+                data-ready="Apple 芯片"
+                aria-disabled="true"
+                href="#"
+                ><span class="label">Apple 芯片</span><span class="size"></span
+              ></a>
+              <a class="btn" data-dl="mac-intel" data-ready="Intel" aria-disabled="true" href="#"
+                ><span class="label">Intel</span><span class="size"></span
+              ></a>
+            </div>
+          </article>
+        </div>
+        <p class="release-note" data-release-note>
+          内测版 1正在做发布前的最后检查，下载按钮开放后即可下载。
+        </p>
+        <div class="callout notice" id="before-use">
+          <p>
+            <strong>使用前须知：</strong>实时转写和默认回答使用 OpenAI 的服务。OpenAI
+            目前不向中国大陆和香港提供 API，在这些地区需要能稳定访问 OpenAI
+            的网络环境，否则会连接失败。回答服务可以换成 DeepSeek
+            等国内能直接访问的服务，但实时转写目前只支持
+            OpenAI。仍须符合服务商支持地区与账号使用要求。详见<a href="faq.html">常见问题</a>。
+          </p>
+        </div>
+
+        <section class="license-card" aria-labelledby="lic-title">
+          <div>
+            <h2 id="lic-title">扫码领取授权</h2>
+            <p>
+              安装后打开软件，复制授权页上的“设备码”。加维护者微信，备注“面试助手内测”。通过后把设备码发过来，会发授权文件，并拉你进内测群。收到授权文件后导入即可使用。
+            </p>
+            <p class="small">只需要发设备码。不要发送 API Key、简历或其他个人资料。</p>
+          </div>
+          <img
+            src="assets/wechat-license-qr.png"
+            width="728"
+            height="728"
+            alt="微信二维码：扫码添加维护者，领取授权"
+          />
+        </section>
+      </div>
+
+      <div class="narrow prose">
+        <h2>Windows 安装提示</h2>
+        <p>
+          安装时如果出现“Windows
+          已保护你的电脑”，点“更多信息”，再点“仍要运行”。这是因为安装包还没有购买数字签名，请只从本站下载。
+        </p>
+
+        <h2>Mac 第一次打开</h2>
+        <ol>
+          <li>双击下载的文件，把“面试助手”拖进“应用程序”文件夹。</li>
+          <li>
+            第一次打开时，系统可能提示“无法验证开发者”。点“完成”，然后打开“系统设置 →
+            隐私与安全性”，在页面下方点“仍要打开”。测试版还没有做苹果的开发者认证，所以会有这一步。公司或学校统一管理的
+            Mac 可能不允许这样放行。
+          </li>
+          <li>
+            用到麦克风、截图或录制电脑声音时，按系统提示允许权限。改完权限后，退出助手再重新打开。
+          </li>
+        </ol>
+        <p>如果系统提示文件“已损坏”，请不要强行打开，重新从本站下载一次。</p>
+
+        <h2>Mac 测试版还没验证的部分</h2>
+        <p>
+          我们没有真机，Mac 版是在云端的 Mac
+          上测试的。安装、授权、导入资料、生成回答都已经测过，下面这些还没在真实电脑上确认：
+        </p>
+        <ul>
+          <li>录制会议软件里对方的声音（腾讯会议、Zoom 等）</li>
+          <li>软件里的中文朗读</li>
+          <li>macOS 14.2 的电脑，以及多显示器、全屏会议</li>
+        </ul>
+        <p>
+          如果你用的是 Mac，欢迎反馈使用情况。反馈时说明系统版本、芯片和出问题的步骤即可，不要发送
+          API Key 或真实面试录音。更多限制见<a href="known-issues.html">已知问题</a>。
+        </p>
+
+        <h2>装好以后</h2>
+        <p>
+          照着<a href="manual.html">使用手册</a>填好 API
+          Key（或导入含体验额度的授权）、上传资料、贴上岗位要求。建议先用编的问题试一遍，熟悉了再用在真实练习里。
+        </p>
+      </div>
+      <section class="license-card" id="beta-group">
+        <div>
+          <h2>加入微信内测群</h2>
+          <p>
+            加维护者微信，备注“面试助手内测”。通过后把设备码发过来，会发授权文件，并拉你进内测群。
+          </p>
+        </div>
+        <img
+          src="assets/wechat-license-qr.png"
+          width="728"
+          height="728"
+          alt="维护者微信二维码：添加后申请加入内测群"
+        />
+      </section>
+    </main>
+    <footer class="site-footer">
+      <div class="footer-inner">
+        <div>
+          <p><strong>面试助手</strong> 内测版 1，支持 Windows，Mac 版为测试版。</p>
+          <p>回答由 AI 起草，需要你自己核对。真实面试中使用前，先确认对方允许。</p>
+        </div>
+        <div class="footer-links">
+          <a href="privacy.html">隐私与数据</a><a href="changelog.html">更新日志</a
+          ><a href="credits.html">开源署名</a>
+        </div>
+        <p class="footer-en" lang="en">
+          Interview Assistant is a desktop app for preparing, practising and reviewing interviews
+          with your own materials. Answers are drafts for you to verify. Windows, plus a macOS beta.
+        </p>
+      </div>
+    </footer>
+    <script src="assets/site.js" defer></script>
+  </body>
+</html>

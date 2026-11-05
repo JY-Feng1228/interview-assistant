@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>常见问题 · 面试助手</title>
+    <meta
+      name="description"
+      content="面试助手常见问题：准备什么、费用、API Key、授权、抢答、Mac 测试版。"
+    />
+    <link rel="icon" href="assets/mark.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="assets/site.css?v=f277f8000c8c" />
+    <script>
+      document.documentElement.classList.add('js');
+    </script>
+  </head>
+  <body>
+    <a class="skip" href="#content">跳到正文</a>
+    <header class="site-header">
+      <a class="brand" href="index.html"
+        ><span class="brand-mark"
+          ><svg viewBox="0 0 24 24" aria-hidden="true">
+            <rect x="9" y="3" width="6" height="11" rx="3" />
+            <path d="M6 11a6 6 0 0 0 12 0M12 17v4" /></svg></span
+        >面试助手<span class="brand-tag">内测版 1</span></a
+      >
+      <nav class="site-nav" aria-label="主导航">
+        <a href="index.html">首页</a><a href="download.html">下载</a
+        ><a href="manual.html">使用手册</a><a href="faq.html" aria-current="page">常见问题</a
+        ><a href="known-issues.html">已知问题</a><a class="nav-cta" href="license.html">获取授权</a>
+      </nav>
+    </header>
+    <main id="content">
+      <div class="narrow">
+        <header class="page-head">
+          <h1>常见问题</h1>
+          <p class="lede">更详细的操作步骤见<a href="manual.html">使用手册</a>。</p>
+        </header>
+        <div class="faq">
+          <details>
+            <summary>我需要准备什么？</summary>
+            <p>
+              一台 Windows 或 Mac 电脑、你的简历和项目资料、目标岗位的要求、授权文件，以及自己的 API
+              Key，或维护者提供的体验额度。只想手动打字提问的话，不需要开麦克风。
+            </p>
+          </details>
+          <details>
+            <summary>在中国大陆能直接用吗？</summary>
+            <p>
+              实时转写和默认的回答服务用的是 OpenAI。OpenAI 目前不向中国大陆和香港提供 API
+              服务，在这些地区需要你自行解决访问 OpenAI 的网络问题，否则会连接失败。回答服务可以换成
+              DeepSeek 等国内能直接访问的服务，但实时转写目前只支持 OpenAI；用不了 OpenAI
+              时，只能手动输入问题让助手作答。能连接网络不代表账号或地区已获支持；请遵守当地法律法规和服务商的使用条款。
+            </p>
+          </details>
+          <details>
+            <summary>API Key 是什么？ChatGPT 会员能用吗？</summary>
+            <p>
+              API Key 是 AI
+              服务给开发者用的密钥，按用量计费，需要在服务商的开发者后台单独申请并充值。ChatGPT Plus
+              之类的聊天会员不包含 API 额度，不能直接用。
+            </p>
+          </details>
+          <details>
+            <summary>一场面试大概花多少钱？</summary>
+            <p>
+              取决于你选的模型和题量。软件开始模拟面试前会显示预估费用，实际以服务商账单为准。建议在服务商后台设置每月用量上限。用体验额度不需要自己付费，额度由所有内测用户共用。
+            </p>
+          </details>
+          <details>
+            <summary>“模拟面试”和“AI 预演”有什么区别？</summary>
+            <p>
+              模拟面试是你自己用麦克风回答，答完看参考答案，结束后生成复盘。AI 预演是 AI
+              按你的资料代答，用来提前看看会被问什么、资料够不够，不代表你本人的表现。
+            </p>
+          </details>
+          <details>
+            <summary>资料里没写的事，助手会帮我编吗？</summary>
+            <p>
+              不会。回答只根据你上传的资料；资料没写的，它会说得比较保守，或者直接说没有相关经历。想让回答更具体，就把项目里实际做过的事写清楚再上传。
+            </p>
+          </details>
+          <details>
+            <summary>面试官话说一半停住了，会不会抢答？</summary>
+            <p>
+              有可能。面试官停顿一两秒以上，助手可能会先按半句话开始回答。这时已经出来的答案会变暗保留，等面试官说完，再按完整的问题重新回答，屏幕不会突然变空。不想被打扰的话，可以关掉“自动作答”，改成手动触发。
+            </p>
+          </details>
+          <details>
+            <summary>真实面试里能用吗？</summary>
+            <p>
+              先确认面试官或公司允许使用辅助工具。助手更适合用来准备和练习：面试前模拟、面试后复盘。
+            </p>
+          </details>
+          <details>
+            <summary>手机能用吗？</summary>
+            <p>
+              手机只能查看，不能操作。电脑和手机在同一个 Wi‑Fi
+              下时，打开电脑上显示的链接，就能在手机上看到当前的问题和回答。
+            </p>
+          </details>
+          <details>
+            <summary>API Key 保存后，设置里为什么是空的？</summary>
+            <p>
+              为了安全，软件不会把已保存的 Key
+              显示出来。看到“已配置”就说明保存成功了：留空表示继续用旧的，填新的就会替换。
+            </p>
+          </details>
+          <details>
+            <summary>换电脑或者授权到期了怎么办？</summary>
+            <p>
+              到期后用同一个设备码找我续期，本机资料不会被删除。换电脑或重装系统后设备码可能变化，需要重新领取。
+            </p>
+          </details>
+          <details>
+            <summary>Mac 版为什么是测试版？</summary>
+            <p>
+              Mac 版只在云端的 Mac
+              上测过，还没在真实电脑上验证过录制会议声音等功能。详细范围见下载页。
+            </p>
+          </details>
+          <details>
+            <summary>遇到问题怎么反馈？</summary>
+            <p>
+              先在设置中点击“反馈问题”，把复制的诊断信息和出问题的步骤粘贴到内测群；需要更多信息时，按群里的建议导出诊断包，确认内容后再分享。请不要发送
+              API
+              Key、真实面试录音或完整的个人资料。加维护者微信，备注“面试助手内测”。通过后把设备码发过来，会发授权文件，并拉你进内测群。二维码见“获取授权”页。
+            </p>
+          </details>
+        </div>
+        <div style="height: 80px"></div>
+      </div>
+      <section class="license-card" id="beta-group">
+        <div>
+          <h2>加入微信内测群</h2>
+          <p>
+            加维护者微信，备注“面试助手内测”。通过后把设备码发过来，会发授权文件，并拉你进内测群。
+          </p>
+        </div>
+        <img
+          src="assets/wechat-license-qr.png"
+          width="728"
+          height="728"
+          alt="维护者微信二维码：添加后申请加入内测群"
+        />
+      </section>
+    </main>
+    <footer class="site-footer">
+      <div class="footer-inner">
+        <div>
+          <p><strong>面试助手</strong> 内测版 1，支持 Windows，Mac 版为测试版。</p>
+          <p>回答由 AI 起草，需要你自己核对。真实面试中使用前，先确认对方允许。</p>
+        </div>
+        <div class="footer-links">
+          <a href="privacy.html">隐私与数据</a><a href="changelog.html">更新日志</a
+          ><a href="credits.html">开源署名</a>
+        </div>
+        <p class="footer-en" lang="en">
+          Interview Assistant is a desktop app for preparing, practising and reviewing interviews
+          with your own materials. Answers are drafts for you to verify. Windows, plus a macOS beta.
+        </p>
+      </div>
+    </footer>
+    <script src="assets/site.js" defer></script>
+  </body>
+</html>

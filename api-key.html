@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>获取 API Key · 面试助手</title>
+    <meta name="description" content="注册、充值、建Key和设置每月额度。" />
+    <link rel="icon" href="assets/mark.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="assets/site.css?v=f277f8000c8c" />
+    <script>
+      document.documentElement.classList.add('js');
+    </script>
+  </head>
+  <body>
+    <a class="skip" href="#content">跳到正文</a>
+    <header class="site-header">
+      <a class="brand" href="index.html"
+        ><span class="brand-mark"
+          ><svg viewBox="0 0 24 24" aria-hidden="true">
+            <rect x="9" y="3" width="6" height="11" rx="3" />
+            <path d="M6 11a6 6 0 0 0 12 0M12 17v4" /></svg></span
+        >面试助手<span class="brand-tag">内测版 1</span></a
+      >
+      <nav class="site-nav" aria-label="主导航">
+        <a href="index.html">首页</a><a href="download.html">下载</a
+        ><a href="manual.html">使用手册</a><a href="faq.html">常见问题</a
+        ><a href="known-issues.html">已知问题</a><a class="nav-cta" href="license.html">获取授权</a>
+      </nav>
+    </header>
+    <main id="content">
+      <div class="narrow prose">
+        <h1>怎么获取 OpenAI API Key</h1>
+        <p>
+          内测用户可以先向维护者申请体验额度，不必一开始就创建自己的
+          Key。维护者提供的体验额度由所有内测用户共用，每月有总上限，用完后当月就不能再用。使用体验
+          Key 时，音频和问答通过维护者的 OpenAI 账号发送给
+          OpenAI；请先确认自己有权发送这些内容。设置页会显示“正在使用维护者提供的体验额度”，你可以随时填写自己的
+          Key，自己的 Key 优先使用。
+        </p>
+        <ol>
+          <li>
+            打开
+            <a href="https://platform.openai.com/">OpenAI API 平台</a
+            >，注册并登录符合服务商地区和账户要求的账号。ChatGPT 的订阅和 API 计费是两回事。OpenAI
+            不向中国大陆和香港提供 API；仅网络可访问不代表符合使用资格。
+          </li>
+          <li>
+            在平台的 Billing
+            页面查看计费方式并充值或开通付费。请本人核对金额、自动充值开关和支付方式，软件不会替你付款。
+          </li>
+          <li>
+            创建一个专门用于本软件的项目，在项目的 API keys 页面创建
+            Key。按平台要求妥善保存，只粘贴到软件设置的 OpenAI Key
+            输入框，不发到群、截图或反馈信息里。详情见
+            <a href="https://developers.openai.com/api/docs/quickstart">官方入门说明</a>。
+          </li>
+          <li>
+            在组织和该项目的 Limits 设置每月消费上限，并开启 Enforce a hard
+            limit（强制执行上限），再设置接近上限时的提醒；不要把提醒阈值当成消费限制。上限生效可能存在短暂延迟，少量额外用量仍可能产生，具体权限和可选项以账号页面为准。参见
+            <a href="https://developers.openai.com/api/docs/guides/spend-limits">官方消费上限说明</a
+            >。
+          </li>
+          <li>
+            在软件设置中粘贴自己的 Key
+            并保存，以“已配置”判断是否成功；输入框清空是正常的。请先用不含隐私的合成问题试用。换其他回答服务不会自动替换
+            OpenAI 转写服务。
+          </li>
+        </ol>
+        <p>
+          一场模拟面试约
+          $0.2–0.4，仅供内测规划参考，取决于时长、模型、资料和重试，以实际账单为准。所有内测用户共用的体验额度当月用完时，可以在设置里换自己的
+          API Key，或联系维护者；内测授权默认每次 7 天，用同一设备码续期。
+        </p>
+      </div>
+    </main>
+    <footer class="site-footer">
+      <div class="footer-inner">
+        <div>
+          <p><strong>面试助手</strong> 内测版 1，支持 Windows，Mac 版为测试版。</p>
+          <p>回答由 AI 起草，需要你自己核对。真实面试中使用前，先确认对方允许。</p>
+        </div>
+        <div class="footer-links">
+          <a href="privacy.html">隐私与数据</a><a href="changelog.html">更新日志</a
+          ><a href="credits.html">开源署名</a>
+        </div>
+        <p class="footer-en" lang="en">
+          Interview Assistant is a desktop app for preparing, practising and reviewing interviews
+          with your own materials. Answers are drafts for you to verify. Windows, plus a macOS beta.
+        </p>
+      </div>
+    </footer>
+    <script src="assets/site.js" defer></script>
+  </body>
+</html>

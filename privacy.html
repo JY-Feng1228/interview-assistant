@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>隐私与数据 · 面试助手</title>
+    <meta name="description" content="面试助手哪些数据留在本机、哪些会发给你选的 AI 服务。" />
+    <link rel="icon" href="assets/mark.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="assets/site.css?v=f277f8000c8c" />
+    <script>
+      document.documentElement.classList.add('js');
+    </script>
+  </head>
+  <body>
+    <a class="skip" href="#content">跳到正文</a>
+    <header class="site-header">
+      <a class="brand" href="index.html"
+        ><span class="brand-mark"
+          ><svg viewBox="0 0 24 24" aria-hidden="true">
+            <rect x="9" y="3" width="6" height="11" rx="3" />
+            <path d="M6 11a6 6 0 0 0 12 0M12 17v4" /></svg></span
+        >面试助手<span class="brand-tag">内测版 1</span></a
+      >
+      <nav class="site-nav" aria-label="主导航">
+        <a href="index.html">首页</a><a href="download.html">下载</a
+        ><a href="manual.html">使用手册</a><a href="faq.html">常见问题</a
+        ><a href="known-issues.html">已知问题</a><a class="nav-cta" href="license.html">获取授权</a>
+      </nav>
+    </header>
+    <main id="content">
+      <div class="narrow">
+        <header class="page-head">
+          <h1>隐私与数据</h1>
+          <p class="lede">
+            面试助手是装在你电脑上的软件。你的资料保存在本机；使用 AI
+            功能时，相关内容会发送给你选择的服务。
+          </p>
+        </header>
+      </div>
+      <div class="narrow prose">
+        <h2>授权停用检查</h2>
+        <p>
+          软件会在启动时及之后每六小时从官网读取停用名单，请求不附带任何个人信息，不发送设备码、授权编号、资料或配置。官网服务仍会收到普通网络连接信息，例如
+          IP 地址。联网失败或名单验证失败不会新增停用；已经确认停用的授权仍会保持停用。
+        </p>
+        <h2>留在你电脑上的</h2>
+        <p>
+          设置、上传的资料和问答记录，都保存在你电脑上的软件数据目录里。API Key
+          会用系统自带的加密功能保存（Mac
+          上是“钥匙串”）。资料和问答本身没有加密，不要把整个数据目录发给别人。
+        </p>
+        <h2>会发给 AI 服务的</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>你在用的功能</th>
+              <th>会发出去的内容</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>实时转写</td>
+              <td>麦克风或电脑声音的音频，发给 OpenAI 转写</td>
+            </tr>
+            <tr>
+              <td>生成回答、核对、模拟面试、复盘</td>
+              <td>
+                问题、截图题目、岗位要求和相关资料片段，发给你选的回答服务（OpenAI、DeepSeek、Gemini
+                等）
+              </td>
+            </tr>
+            <tr>
+              <td>Ollama</td>
+              <td>发到你自己配置的 Ollama 地址</td>
+            </tr>
+          </tbody>
+        </table>
+        <p>这些服务按各自的隐私政策处理数据。不要上传你无权分享的材料。</p>
+        <h2>领取授权</h2>
+        <p>
+          设备码在你电脑上生成，由你自己通过微信发给我。设备码只用来签发授权文件，软件不需要联网激活。
+        </p>
+        <h2>手机查看</h2>
+        <p>
+          打开手机显示后，电脑会在局域网里开一个只读页面。拿到链接的人都能看到当前问答，所以只在可信的网络里用，用完在电脑上关掉。
+        </p>
+        <h2>这个网站</h2>
+        <p>
+          网站是纯静态页面，没有账号、表单、统计脚本或第三方字体。网站托管在 GitHub，GitHub
+          会按它的规则记录访问日志。
+        </p>
+      </div>
+      <section class="narrow prose">
+        <h2>体验额度与诊断</h2>
+        <p>
+          使用体验 Key时，问答和音频通过维护者的 OpenAI 账号发送给
+          OpenAI。维护者能够看到其项目的用量；不要向软件提交无权发送的内容。
+        </p>
+        <p>
+          诊断包仅在软件列出内容、由你确认并选择保存位置后导出。软件不会自动上传诊断包；分享前请自行核对。
+        </p>
+      </section>
+    </main>
+    <footer class="site-footer">
+      <div class="footer-inner">
+        <div>
+          <p><strong>面试助手</strong> 内测版 1，支持 Windows，Mac 版为测试版。</p>
+          <p>回答由 AI 起草，需要你自己核对。真实面试中使用前，先确认对方允许。</p>
+        </div>
+        <div class="footer-links">
+          <a href="privacy.html">隐私与数据</a><a href="changelog.html">更新日志</a
+          ><a href="credits.html">开源署名</a>
+        </div>
+        <p class="footer-en" lang="en">
+          Interview Assistant is a desktop app for preparing, practising and reviewing interviews
+          with your own materials. Answers are drafts for you to verify. Windows, plus a macOS beta.
+        </p>
+      </div>
+    </footer>
+    <script src="assets/site.js" defer></script>
+  </body>
+</html>

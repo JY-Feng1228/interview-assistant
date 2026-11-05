@@ -1,0 +1,22 @@
+{
+  "version": "内测版 1",
+  "semver": "0.1.0-beta.1",
+  "released": false,
+  "files": {
+    "win": {
+      "name": "Interview-Assistant-Beta1-Windows-x64-Setup.exe",
+      "bytes": 123529150,
+      "url": null
+    },
+    "mac-arm": {
+      "name": "Interview-Assistant-Beta1-macOS-AppleSilicon.dmg",
+      "bytes": 124503901,
+      "url": null
+    },
+    "mac-intel": {
+      "name": "Interview-Assistant-Beta1-macOS-Intel.dmg",
+      "bytes": 130435215,
+      "url": null
+    }
+  }
+}
