@@ -31,45 +31,18 @@
       <div class="narrow prose">
         <h1>怎么获取 OpenAI API Key</h1>
         <p>
-          内测用户可以先向维护者申请体验额度，不必一开始就创建自己的
-          Key。维护者提供的体验额度由所有内测用户共用，每月有总上限，用完后当月就不能再用。使用体验
-          Key 时，音频和问答通过维护者的 OpenAI 账号发送给
-          OpenAI；请先确认自己有权发送这些内容。设置页会显示“正在使用维护者提供的体验额度”，你可以随时填写自己的
-          Key，自己的 Key 优先使用。
+          已有体验额度可跳过开户。自备 Key 时，按
+          <a href="https://developers.openai.com/api/docs/quickstart">官方入门说明</a>
+          在本人有权使用的账户/项目创建 Key，粘贴到软件“设置 → 回答”，不要发群或截图分享。
         </p>
-        <ol>
-          <li>
-            打开
-            <a href="https://platform.openai.com/">OpenAI API 平台</a
-            >，注册并登录符合服务商地区和账户要求的账号。ChatGPT 的订阅和 API 计费是两回事。OpenAI
-            不向中国大陆和香港提供 API；仅网络可访问不代表符合使用资格。
-          </li>
-          <li>
-            在平台的 Billing
-            页面查看计费方式并充值或开通付费。请本人核对金额、自动充值开关和支付方式，软件不会替你付款。
-          </li>
-          <li>
-            创建一个专门用于本软件的项目，在项目的 API keys 页面创建
-            Key。按平台要求妥善保存，只粘贴到软件设置的 OpenAI Key
-            输入框，不发到群、截图或反馈信息里。详情见
-            <a href="https://developers.openai.com/api/docs/quickstart">官方入门说明</a>。
-          </li>
-          <li>
-            在组织和该项目的 Limits 设置每月消费上限，并开启 Enforce a hard
-            limit（强制执行上限），再设置接近上限时的提醒；不要把提醒阈值当成消费限制。上限生效可能存在短暂延迟，少量额外用量仍可能产生，具体权限和可选项以账号页面为准。参见
-            <a href="https://developers.openai.com/api/docs/guides/spend-limits">官方消费上限说明</a
-            >。
-          </li>
-          <li>
-            在软件设置中粘贴自己的 Key
-            并保存，以“已配置”判断是否成功；输入框清空是正常的。请先用不含隐私的合成问题试用。换其他回答服务不会自动替换
-            OpenAI 转写服务。
-          </li>
-        </ol>
         <p>
-          一场模拟面试约
-          $0.2–0.4，仅供内测规划参考，取决于时长、模型、资料和重试，以实际账单为准。所有内测用户共用的体验额度当月用完时，可以在设置里换自己的
-          API Key，或联系维护者；内测授权默认每次 7 天，用同一设备码续期。
+          API 计费独立于 ChatGPT 订阅。开户、支付及自动充值由你本人确认；不需要为了体验额度先开户。
+        </p>
+        <p>
+          有管理权限时，可按
+          <a href="https://developers.openai.com/api/docs/guides/spend-limits">官方消费上限说明</a>
+          在组织或项目配置月消费上限和 Enforce a hard
+          limit。提醒不阻断请求；强制上限传播可能延迟、略有超额，按实际账户可用选项设置。
         </p>
       </div>
     </main>
