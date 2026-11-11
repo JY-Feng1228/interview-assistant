@@ -1,12 +1,12 @@
 {
-  "version": "内测版 1",
-  "semver": "0.1.0-beta.1",
+  "version": "内测版 1.1",
+  "semver": "0.1.0-beta.2",
   "released": true,
   "files": {
     "win": {
-      "name": "Interview-Assistant-Beta1-Windows-x64-Setup.exe",
-      "bytes": 123529433,
-      "url": "https://github.com/JY-Feng1228/interview-assistant/releases/download/v0.1.0-beta.1-x128/Interview-Assistant-Beta1-Windows-x64-Setup.exe"
+      "name": "Interview-Assistant-Beta1.1-Windows-x64-Setup.exe",
+      "bytes": 123530646,
+      "url": "https://github.com/JY-Feng1228/interview-assistant/releases/download/v0.1.0-beta.2/Interview-Assistant-Beta1.1-Windows-x64-Setup.exe"
     },
     "mac-arm": {
       "name": "Interview-Assistant-Beta1-macOS-AppleSilicon.dmg",
