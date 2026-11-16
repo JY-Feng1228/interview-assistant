@@ -369,41 +369,216 @@ p {
   color: #8a7660;
 }
 
-/* 一次性的入场：字幕先出，回答随后逐行出现 */
+/* 舞台细节：头像光圈、声波、骨架屏、高亮、轮次圆点 */
+.person {
+  isolation: isolate;
+}
+.person .ring {
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  border: 2px solid var(--live);
+  opacity: 0;
+  z-index: -1;
+}
+.person-name {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+.voice {
+  display: inline-flex;
+  align-items: center;
+  gap: 2px;
+  height: 12px;
+}
+.voice i {
+  width: 2px;
+  height: 4px;
+  border-radius: 1px;
+  background: #6f7c88;
+  transition: background 0.3s;
+}
+.clock {
+  font-variant-numeric: tabular-nums;
+}
+.answer-card {
+  overflow: hidden;
+}
+.answer-card ol b {
+  font-weight: 600;
+  color: var(--ink);
+}
+.lead-line .mark {
+  background: linear-gradient(transparent 60%, rgba(239, 172, 92, 0.38) 0) no-repeat;
+  background-size: 100% 100%;
+  box-decoration-break: clone;
+  -webkit-box-decoration-break: clone;
+}
+.status {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+.skeleton {
+  display: none;
+}
+.answer-foot {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+.dots {
+  display: inline-flex;
+  gap: 5px;
+}
+.dots i {
+  width: 6px;
+  height: 6px;
+  border-radius: 3px;
+  background: var(--answer-line);
+  transition:
+    width 0.3s,
+    background 0.3s;
+}
+.dots i.on {
+  width: 16px;
+  background: #d9b48c;
+}
+
+/* 循环播放：只在 site.js 给舞台加上 .is-playing 后生效；
+   无脚本或减少动态效果时是上面的静态画面 */
 @media (prefers-reduced-motion: no-preference) {
-  .js .subtitle .typed {
-    display: inline;
+  .live::before {
+    animation: live-pulse 2s ease-in-out infinite;
   }
-  .js .answer-card {
-    animation: card-in 0.5s 1.6s both ease-out;
+  .stage.is-playing .answer-card {
+    transition:
+      opacity 0.45s ease-out,
+      transform 0.45s cubic-bezier(0.2, 0.8, 0.2, 1);
   }
-  .js .answer-card .reveal {
-    animation: line-in 0.4s both ease-out;
-  }
-  .js .answer-card .reveal:nth-child(1) {
-    animation-delay: 2.1s;
-  }
-  .js .answer-card .reveal:nth-child(2) {
-    animation-delay: 2.5s;
-  }
-  .js .answer-card .reveal:nth-child(3) {
-    animation-delay: 2.9s;
-  }
-  .js .answer-card .lead-line.reveal {
-    animation-delay: 1.9s;
-  }
-  .js .answer-foot {
-    animation: line-in 0.4s 3.3s both;
-  }
-}
-@keyframes card-in {
-  from {
+  .stage.is-playing .answer-card.is-hidden {
     opacity: 0;
-    transform: translateY(12px);
+    transform: translateY(14px) scale(0.98);
+  }
+  /* 面试官说话：光圈外扩、声波跳动 */
+  .stage.is-speaking .person .ring {
+    animation: ring-out 1.8s ease-out infinite;
+  }
+  .stage.is-speaking .person .ring + .ring {
+    animation-delay: 0.9s;
+  }
+  .stage.is-speaking .voice i {
+    background: var(--live);
+    animation: voice 0.9s ease-in-out infinite;
+  }
+  .stage.is-speaking .voice i:nth-child(2) {
+    animation-delay: -0.3s;
+  }
+  .stage.is-speaking .voice i:nth-child(3) {
+    animation-delay: -0.6s;
+  }
+  .stage.is-speaking .voice i:nth-child(4) {
+    animation-delay: -0.15s;
+  }
+  /* 起草中：骨架屏 + 转圈 */
+  .stage.is-thinking .skeleton {
+    display: grid;
+    gap: 10px;
+    padding-top: 4px;
+  }
+  .stage.is-thinking .lead-line,
+  .stage.is-thinking .answer-card ol {
+    display: none;
+  }
+  .skeleton i {
+    height: 10px;
+    border-radius: 5px;
+    background: linear-gradient(90deg, #f3e6d6 0%, #fbf3ea 50%, #f3e6d6 100%) 0 0 / 200% 100%;
+    animation: shimmer 1.2s linear infinite;
+  }
+  .skeleton i:first-child {
+    width: 70%;
+    height: 12px;
+  }
+  .skeleton i:nth-child(3) {
+    width: 88%;
+  }
+  .skeleton i:last-child {
+    width: 60%;
+  }
+  .stage.is-thinking .status::before {
+    content: '';
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    border: 2px solid #e2cbb0;
+    border-top-color: var(--brand);
+    animation: spin 0.8s linear infinite;
+  }
+  /* 流式输出时的光标 */
+  .stage.is-playing .is-typing::after {
+    content: '';
+    display: inline-block;
+    width: 2px;
+    height: 1em;
+    margin-left: 2px;
+    vertical-align: -0.14em;
+    background: currentColor;
+    opacity: 0.75;
+    animation: caret 0.9s steps(1) infinite;
+  }
+  .stage.is-playing .lead-line .mark {
+    transition: background-size 0.7s cubic-bezier(0.3, 0.7, 0.2, 1);
+  }
+  .stage.is-playing .lead-line .mark:not(.is-marked) {
+    background-size: 0% 100%;
+  }
+  .stage.is-playing .answer-foot > span:first-child {
+    transition: opacity 0.4s;
+  }
+  .stage.is-playing .answer-foot.is-pending > span:first-child {
+    opacity: 0;
   }
 }
-@keyframes line-in {
+@keyframes live-pulse {
+  50% {
+    box-shadow: 0 0 0 7px rgba(47, 158, 107, 0);
+  }
+}
+@keyframes ring-out {
   from {
+    opacity: 0.7;
+    transform: scale(1);
+  }
+  to {
+    opacity: 0;
+    transform: scale(1.28);
+  }
+}
+@keyframes voice {
+  0%,
+  100% {
+    height: 3px;
+  }
+  50% {
+    height: 12px;
+  }
+}
+@keyframes shimmer {
+  to {
+    background-position: -200% 0;
+  }
+}
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes caret {
+  50% {
     opacity: 0;
   }
 }
@@ -912,6 +1087,7 @@ p {
   }
   .stage {
     aspect-ratio: auto;
+    min-height: 516px;
     display: flex;
     flex-direction: column;
     gap: 12px;
@@ -919,6 +1095,9 @@ p {
   }
   .stage > * {
     position: static;
+  }
+  .stage > .person {
+    position: relative;
   }
   .stage-bar {
     position: absolute;
@@ -937,6 +1116,7 @@ p {
   }
   .answer-card {
     width: auto;
+    min-height: 232px;
   }
   .answer-card ol li:nth-child(3) {
     display: none;

@@ -9,7 +9,7 @@
       content="面面俱答实时转写面试官的问题，根据你的简历和项目资料起草回答要点；支持模拟面试和复盘。Windows 与 Mac 测试版。"
     />
     <link rel="icon" href="assets/mark.svg" type="image/svg+xml" />
-    <link rel="stylesheet" href="assets/site.css?v=c9d6163baa99" />
+    <link rel="stylesheet" href="assets/site.css?v=25a9df9682be" />
     <script>
       document.documentElement.classList.add('js');
     </script>
@@ -50,31 +50,81 @@
         </div>
         <div
           class="stage"
+          data-stage
           role="img"
           aria-label="示意：视频面试中，面试官的问题被转写成字幕，右侧是根据资料起草的回答要点"
         >
-          <div class="stage-bar"><span class="live">正在转写</span><span>00:12:48</span></div>
+          <div class="stage-bar">
+            <span class="live">正在转写</span><span class="clock" data-clock></span>
+          </div>
           <div class="person">
-            <svg viewBox="0 0 24 24">
+            <span class="ring"></span><span class="ring"></span
+            ><svg viewBox="0 0 24 24">
               <circle cx="12" cy="8" r="4.2" />
               <path d="M3.5 21c0-4.6 3.8-8 8.5-8s8.5 3.4 8.5 8z" />
             </svg>
           </div>
-          <span class="person-name">面试官</span>
+          <span class="person-name"
+            >面试官<span class="voice" aria-hidden="true"><i></i><i></i><i></i><i></i></span
+          ></span>
           <p class="subtitle">
-            <small>面试官</small
-            ><span class="typed" data-typed>这个项目里你具体负责哪一块？遇到过什么困难？</span>
+            <small>面试官</small><span data-q>这个项目里你具体负责哪一块？遇到过什么困难？</span>
           </p>
           <div class="answer-card" aria-hidden="true">
-            <div class="answer-head"><strong>参考回答</strong><span>首字 2.1 秒</span></div>
-            <p class="lead-line reveal">我主要负责数据清洗和模型评估。</p>
-            <ol>
-              <li class="reveal">数据：统一了三个来源的口径，缺失值按规则补齐</li>
-              <li class="reveal">困难：两个模型差距很小，改用分时段对比才看出区别</li>
-              <li class="reveal">结果：最终选型被组里采用，写进了报告</li>
+            <div class="answer-head">
+              <strong>参考回答</strong><span class="status" data-status>首字 2.1 秒</span>
+            </div>
+            <div class="skeleton"><i></i><i></i><i></i><i></i></div>
+            <p class="lead-line">
+              <span class="mark" data-lead>我主要负责数据清洗和模型评估。</span>
+            </p>
+            <ol data-points>
+              <li><b>数据：</b>统一了三个来源的口径，缺失值按规则补齐</li>
+              <li><b>困难：</b>两个模型差距很小，改用分时段对比才看出区别</li>
+              <li><b>结果：</b>最终选型被组里采用，写进了报告</li>
             </ol>
-            <p class="answer-foot">依据：项目资料、课程报告</p>
+            <div class="answer-foot">
+              <span data-foot>依据：项目资料、课程报告</span
+              ><span class="dots" data-dots><i class="on"></i><i></i><i></i></span>
+            </div>
           </div>
+          <script type="application/json" data-scenes>
+            [
+              {
+                "q": "这个项目里你具体负责哪一块？遇到过什么困难？",
+                "ttft": "首字 2.1 秒",
+                "lead": "我主要负责数据清洗和模型评估。",
+                "points": [
+                  "数据：统一了三个来源的口径，缺失值按规则补齐",
+                  "困难：两个模型差距很小，改用分时段对比才看出区别",
+                  "结果：最终选型被组里采用，写进了报告"
+                ],
+                "foot": "依据：项目资料、课程报告"
+              },
+              {
+                "q": "为什么想来我们公司做这个岗位？",
+                "ttft": "首字 1.8 秒",
+                "lead": "岗位要做的事，和我做过的最对得上。",
+                "points": [
+                  "匹配：JD 里的数据分析和报表，是我项目里做得最多的",
+                  "了解：看过贵司近期的业务方向，想参与落地",
+                  "打算：先把业务和工具吃透，再负责完整模块"
+                ],
+                "foot": "依据：岗位 JD、简历"
+              },
+              {
+                "q": "SQL 里 WHERE 和 HAVING 有什么区别？",
+                "ttft": "首字 1.6 秒",
+                "lead": "WHERE 在分组前筛行，HAVING 在分组后筛组。",
+                "points": [
+                  "顺序：WHERE → GROUP BY → HAVING",
+                  "聚合：HAVING 里能用 COUNT、SUM，WHERE 里不行",
+                  "习惯：能在 WHERE 里筛的先筛，参与分组的数据更少"
+                ],
+                "foot": "依据：技术知识"
+              }
+            ]
+          </script>
         </div>
       </section>
 
