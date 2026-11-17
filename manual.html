@@ -22,7 +22,7 @@
           ><svg viewBox="0 0 24 24" aria-hidden="true">
             <rect x="9" y="3" width="6" height="11" rx="3" />
             <path d="M6 11a6 6 0 0 0 12 0M12 17v4" /></svg></span
-        >面面俱答<span class="brand-tag">内测版 1.4</span></a
+        >面面俱答<span class="brand-tag">内测版 1.4.1</span></a
       >
       <nav class="site-nav" aria-label="主导航">
         <a href="index.html">首页</a><a href="download.html">下载</a
@@ -46,7 +46,7 @@
         </div>
       </div>
       <article class="narrow prose">
-        <p>内测版 1.4 · 2026 年 11 月</p>
+        <p>内测版 1.4.1 · 2026 年 11 月</p>
         <p>
           先完成首次上手，再按需使用语音、模拟和复盘。截图使用虚构候选人资料和离线参考回答，图中耗时不代表实际服务速度；回答及自动核查需要你确认，不能当作个人事实。仅用于面试准备与练习，不用于任何考试。需要能访问
           OpenAI 服务的网络环境。
@@ -91,7 +91,8 @@
         <h3 id="sec-ebe078">04 路径 B：填写自己的 Key</h3>
         <p>
           在“设置 → 回答”填写自己的 OpenAI Key，再点底部“保存”。内测公开版的回答和转写共用这里的
-          OpenAI Key。
+          OpenAI Key。保存并重开设置后，可点“检测 Key”检查当前回答服务、模型和 Key
+          是否可用，有未保存的改动时先保存。
         </p>
         <p><img alt="回答设置：OpenAI Key 和保存按钮。" src="assets/guide-key.png" /></p>
         <p>
@@ -281,16 +282,26 @@
         <h3 id="sec-f5aae0">23 反馈问题</h3>
         <p>
           “设置 →
-          反馈与诊断”点“反馈问题”，把复制的诊断信息和复现步骤发到内测群。授权及入群联系方式见官网“获取授权”。
+          反馈与诊断”点“反馈问题”，复制内容的第一行会概括最近失败的功能、原因和次数，并显示已有的转写自检结果，下面附诊断信息。把这些内容和出错时间、复现步骤一起发到内测群。授权及入群联系方式见官网“获取授权”。
         </p>
-        <p><img alt="反馈与诊断：反馈问题和导出诊断包按钮。" src="assets/guide-feedback.png" /></p>
+        <p>
+          <img
+            alt="反馈与诊断：点击反馈问题，复制最近错误总结和诊断信息。"
+            src="assets/guide-feedback.png"
+          />
+        </p>
         <p>不要发送 Key、授权文件、简历全文或真实面试录音。复制诊断不会自动发送给维护者。</p>
         <h3 id="sec-d65706">24 确认后导出诊断包</h3>
         <p>
-          需要更多信息时点“导出诊断包”，先阅读包含内容，再确认并选择本地保存位置。导出后自行核对，再决定是否分享。
+          需要更多信息时点“导出诊断包”，先阅读包含内容，再确认并选择本地保存位置。诊断包中包含事件时间线和错误汇总，可定位功能、原因类别、HTTP
+          状态、服务商代号、模型、耗时与重试序号。最近约 500
+          条安全事件会在本机滚动保留，重启应用后仍可导出。导出后自行核对，再决定是否分享。
         </p>
         <p>
-          <img alt="操作示意：导出诊断包的确认与保存流程。" src="assets/guide-diagnostic.png" />
+          <img
+            alt="导出诊断包确认框：版本、授权状态、最近安全事件及错误元数据、计时和非敏感设置。"
+            src="assets/guide-diagnostic.png"
+          />
         </p>
         <p>诊断包不自动上传；Key 只标已配置/未配置，不包含资料、问答、转写或设备码。</p>
         <h3 id="sec-b44e03">25 隐藏或真正退出</h3>
@@ -372,7 +383,7 @@
     <footer class="site-footer">
       <div class="footer-inner">
         <div>
-          <p><strong>面面俱答</strong> 内测版 1.4，支持 Windows，Mac 版为测试版。</p>
+          <p><strong>面面俱答</strong> 内测版 1.4.1，支持 Windows，Mac 版为测试版。</p>
           <p>回答由 AI 起草，需要你自己核对。仅用于面试准备与练习，不用于任何考试。</p>
         </div>
         <div class="footer-links">

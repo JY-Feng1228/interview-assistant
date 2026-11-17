@@ -1,12 +1,12 @@
 {
-  "version": "内测版 1.4",
-  "semver": "0.1.0-beta.8",
+  "version": "内测版 1.4.1",
+  "semver": "0.1.0-beta.9",
   "released": true,
   "files": {
     "win": {
-      "name": "MianMianJuDa-Beta1.4-Windows-x64-Setup.exe",
-      "bytes": 123617815,
-      "url": "https://github.com/JY-Feng1228/interview-assistant/releases/download/v0.1.0-beta.8/MianMianJuDa-Beta1.4-Windows-x64-Setup.exe"
+      "name": "MianMianJuDa-Beta1.4.1-Windows-x64-Setup.exe",
+      "bytes": 123622510,
+      "url": "https://github.com/JY-Feng1228/interview-assistant/releases/download/v0.1.0-beta.9/MianMianJuDa-Beta1.4.1-Windows-x64-Setup.exe"
     },
     "mac-arm": {
       "name": "Interview-Assistant-Beta1-macOS-AppleSilicon.dmg",
