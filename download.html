@@ -3,10 +3,10 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>下载面面俱答（Windows / Mac 测试版）</title>
+    <title>下载面面俱答（Windows）</title>
     <meta
       name="description"
-      content="下载面面俱答 Windows 版或 Mac 测试版（Apple 芯片 / Intel），以及领取授权的方法。"
+      content="下载面面俱答 Windows 版，以及领取授权的方法。Mac 版开发中。"
     />
     <link rel="icon" href="assets/mark.svg" type="image/svg+xml" />
     <link rel="stylesheet" href="assets/site.css?v=25a9df9682be" />
@@ -59,31 +59,13 @@
 
           <article class="platform" data-platform="mac">
             <div class="platform-top">
-              <h2>Mac <span class="beta-tag">测试版</span></h2>
+              <h2>Mac <span class="beta-tag">开发中</span></h2>
               <span class="yours-flag">你的电脑</span>
             </div>
-            <p class="req">macOS 14.2 或更新</p>
-            <p class="release-note">Mac 暂未开放下载；完成同步更新后另行公布。</p>
-            <div class="chip-help">
-              <p>先看芯片：点屏幕左上角的苹果图标，选“关于本机”。</p>
-              <ul>
-                <li>“芯片”写着 Apple M1、M2、M3、M4 等，选 <strong>Apple 芯片</strong></li>
-                <li>“处理器”写着 Intel，选 <strong>Intel</strong></li>
-              </ul>
-            </div>
-            <div class="mac-buttons">
-              <a
-                class="btn btn-primary"
-                data-dl="mac-arm"
-                data-ready="Apple 芯片"
-                aria-disabled="true"
-                href="#"
-                ><span class="label">Apple 芯片</span><span class="size"></span
-              ></a>
-              <a class="btn" data-dl="mac-intel" data-ready="Intel" aria-disabled="true" href="#"
-                ><span class="label">Intel</span><span class="size"></span
-              ></a>
-            </div>
+            <p class="req">macOS 版本要求待定</p>
+            <p class="release-note">
+              Mac 版还在开发，没有进入内测，暂不提供下载。开放后会在本页和内测群通知。
+            </p>
           </article>
         </div>
         <p class="release-note" data-release-note>
@@ -135,35 +117,6 @@
           已保护你的电脑”，点“更多信息”，再点“仍要运行”。这是因为安装包还没有购买数字签名，请只从本站下载。
         </p>
 
-        <h2>Mac 第一次打开</h2>
-        <ol>
-          <li>双击下载的文件，把“面面俱答”拖进“应用程序”文件夹。</li>
-          <li>
-            第一次打开时，系统可能提示“无法验证开发者”。点“完成”，然后打开“系统设置 →
-            隐私与安全性”，在页面下方点“仍要打开”。测试版还没有做苹果的开发者认证，所以会有这一步。公司或学校统一管理的
-            Mac 可能不允许这样放行。
-          </li>
-          <li>
-            用到麦克风、截图或录制电脑声音时，按系统提示允许权限。改完权限后，退出助手再重新打开。
-          </li>
-        </ol>
-        <p>如果系统提示文件“已损坏”，请不要强行打开，重新从本站下载一次。</p>
-
-        <h2>Mac 测试版还没验证的部分</h2>
-        <p>
-          我们没有真机，Mac 版是在云端的 Mac
-          上测试的。安装、授权、导入资料、生成回答都已经测过，下面这些还没在真实电脑上确认：
-        </p>
-        <ul>
-          <li>录制会议软件里对方的声音（腾讯会议、Zoom 等）</li>
-          <li>软件里的中文朗读</li>
-          <li>macOS 14.2 的电脑，以及多显示器、全屏会议</li>
-        </ul>
-        <p>
-          如果你用的是 Mac，欢迎反馈使用情况。反馈时说明系统版本、芯片和出问题的步骤即可，不要发送
-          API Key 或真实面试录音。更多限制见<a href="known-issues.html">已知问题</a>。
-        </p>
-
         <h2>装好以后</h2>
         <p>
           照着<a href="manual.html">使用手册</a>填好 API
@@ -188,7 +141,7 @@
     <footer class="site-footer">
       <div class="footer-inner">
         <div>
-          <p><strong>面面俱答</strong> 内测版 1.5，支持 Windows，Mac 版为测试版。</p>
+          <p><strong>面面俱答</strong> 内测版 1.5，支持 Windows，Mac 版开发中。</p>
           <p>回答由 AI 起草，需要你自己核对。真实面试中使用前，先确认对方允许。</p>
         </div>
         <div class="footer-links">
@@ -197,7 +150,8 @@
         </div>
         <p class="footer-en" lang="en">
           MianMianJuDa is a desktop app for preparing, practising and reviewing interviews with your
-          own materials. Answers are drafts for you to verify. Windows, plus a macOS beta.
+          own materials. Answers are drafts for you to verify. Windows only for now; the macOS
+          version is in development.
         </p>
       </div>
     </footer>

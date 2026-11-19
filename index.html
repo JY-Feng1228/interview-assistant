@@ -6,7 +6,7 @@
     <title>面面俱答：用自己的资料准备、练习和复盘面试</title>
     <meta
       name="description"
-      content="面面俱答实时转写面试官的问题，根据你的简历和项目资料起草回答要点；支持模拟面试和复盘。Windows 与 Mac 测试版。"
+      content="面面俱答用你的简历和项目资料模拟面试、逐题复盘；在线面试时也能转写面试官的问题、起草回答要点。支持 Windows，Mac 版开发中。"
     />
     <link rel="icon" href="assets/mark.svg" type="image/svg+xml" />
     <link rel="stylesheet" href="assets/site.css?v=25a9df9682be" />
@@ -35,7 +35,7 @@
         <div>
           <h1>听清问题，<br />答出自己的经历。</h1>
           <p class="hero-lede">
-            面面俱答实时转写面试官的问题，根据你的简历和项目资料起草回答要点。平时用来模拟练习，面试后逐题复盘。
+            面面俱答按岗位要求和你的资料模拟出题、追问，答完逐题复盘，帮你把经历讲清楚。在线面试时，也能转写面试官的问题、起草回答要点。
           </p>
           <div class="btn-row">
             <a class="btn btn-primary" href="download.html">免费下载</a>
@@ -43,7 +43,7 @@
             ><a class="btn" href="api-key.html">获取 API Key 指南</a>
           </div>
           <p class="hero-note">
-            支持 Windows 和 Mac（测试版）。需要领取授权；可以用自己的 OpenAI API
+            目前支持 Windows，Mac 版开发中。需要领取授权；可以用自己的 OpenAI API
             Key，内测用户也可以用维护者提供的体验额度。
           </p>
           <p class="hero-note"><a href="download.html#before-use">使用前须知</a></p>
@@ -130,24 +130,9 @@
 
       <section class="band band-tint">
         <div class="wrap">
-          <h2 class="section-title">面试前、面试中、面试后</h2>
-          <p class="section-lede">同一套资料，用在三个场景。</p>
+          <h2 class="section-title">先练习，再上场</h2>
+          <p class="section-lede">同一套资料，三种用法。</p>
           <div class="modes">
-            <article class="mode">
-              <div class="mode-icon">
-                <svg viewBox="0 0 36 36" aria-hidden="true">
-                  <rect x="4" y="7" width="28" height="19" rx="3" />
-                  <path d="M12 31h12M18 26v5" />
-                  <circle cx="13" cy="16" r="3" />
-                  <path d="M20 14h7M20 19h5" />
-                </svg>
-              </div>
-              <h3>正式面试</h3>
-              <p class="who">你来答，助手提示</p>
-              <p>
-                在线面试时，转写面试官的问题，生成参考回答要点。面试官说到一半停顿，答案不会被清空，等他说完再按完整问题更新。
-              </p>
-            </article>
             <article class="mode">
               <div class="mode-icon">
                 <svg viewBox="0 0 36 36" aria-hidden="true">
@@ -174,6 +159,21 @@
                 先看一遍某个岗位可能会被问什么、你的资料能不能撑住，找出需要补充的经历。预演不代表你本人的表现。
               </p>
             </article>
+            <article class="mode">
+              <div class="mode-icon">
+                <svg viewBox="0 0 36 36" aria-hidden="true">
+                  <rect x="4" y="7" width="28" height="19" rx="3" />
+                  <path d="M12 31h12M18 26v5" />
+                  <circle cx="13" cy="16" r="3" />
+                  <path d="M20 14h7M20 19h5" />
+                </svg>
+              </div>
+              <h3>正式面试</h3>
+              <p class="who">你来答，助手提示</p>
+              <p>
+                在线面试时，转写面试官的问题，生成参考回答要点。面试官说到一半停顿，答案不会被清空，等他说完再按完整问题更新。
+              </p>
+            </article>
           </div>
         </div>
       </section>
@@ -185,8 +185,8 @@
           <img
             class="shot"
             src="assets/app.png"
-            width="1830"
-            height="1260"
+            width="2139"
+            height="1347"
             loading="lazy"
             alt="面面俱答主界面：左侧实时转写和当前问题，右侧参考回答"
           />
@@ -200,6 +200,7 @@
             <ul class="checklist yes">
               <li>结合你上传的资料和岗位要求起草回答，仍需核对事实</li>
               <li>答完自动核对一遍，标出没有依据的说法</li>
+              <li>模拟面试结束后生成复盘，指出哪里没讲清楚、资料还缺什么</li>
               <li>按设置保存问答，复盘时可查看已记录的首字时间</li>
               <li>同一局域网内，可以用手机查看当前回答</li>
             </ul>
@@ -226,7 +227,7 @@
           <ol class="steps">
             <li>
               <h3>下载安装</h3>
-              <p>按你的电脑选择 Windows 或 Mac 版本。Mac 需要先看一下芯片类型。</p>
+              <p>目前提供 Windows 安装包，Mac 版还在开发中。</p>
               <p><a href="download.html">去下载</a></p>
             </li>
             <li>
@@ -240,7 +241,7 @@
               <h3>选择额度并填好资料</h3>
               <p>
                 领取含体验额度的授权，或填入自己的 API
-                Key，再上传简历和项目资料，贴上岗位要求，就可以开始练习。
+                Key，再上传简历和项目资料，贴上岗位要求，就可以开始模拟练习。
               </p>
               <p><a href="manual.html">看使用手册</a></p>
             </li>
@@ -265,7 +266,7 @@
     <footer class="site-footer">
       <div class="footer-inner">
         <div>
-          <p><strong>面面俱答</strong> 内测版 1.5，支持 Windows，Mac 版为测试版。</p>
+          <p><strong>面面俱答</strong> 内测版 1.5，支持 Windows，Mac 版开发中。</p>
           <p>回答由 AI 起草，需要你自己核对。真实面试中使用前，先确认对方允许。</p>
         </div>
         <div class="footer-links">
@@ -274,7 +275,8 @@
         </div>
         <p class="footer-en" lang="en">
           MianMianJuDa is a desktop app for preparing, practising and reviewing interviews with your
-          own materials. Answers are drafts for you to verify. Windows, plus a macOS beta.
+          own materials. Answers are drafts for you to verify. Windows only for now; the macOS
+          version is in development.
         </p>
       </div>
     </footer>

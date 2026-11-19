@@ -40,8 +40,7 @@
           <nav class="toc" aria-label="手册目录">
             <a href="#sec-7ff149">首次上手</a><a href="#sec-09570c">按需使用</a
             ><a href="#sec-a42a0a">怎么获取 OpenAI API Key</a
-            ><a href="#sec-fad963">费用、隐私与使用限制</a
-            ><a href="#sec-521390">Mac 测试版与授权说明</a>
+            ><a href="#sec-fad963">费用、隐私与使用限制</a><a href="#sec-e1d9e2">授权说明</a>
           </nav>
         </div>
       </div>
@@ -54,19 +53,13 @@
         <h2 id="sec-7ff149">首次上手</h2>
         <h3 id="sec-de5533">01 下载并安装</h3>
         <p>
-          从官网“下载”选择 Windows 64 位，或与你的 Mac
-          芯片匹配的版本。下载尚未开放时按钮显示“即将开放”，请等待维护者通知。
+          从官网“下载”选择 Windows 64 位版本（Mac
+          版开发中，暂不提供下载）。下载尚未开放时按钮显示“即将开放”，请等待维护者通知。
         </p>
         <p>
-          <img
-            alt="操作示意：从官网选平台，安装后打开面面俱答；Mac 将应用拖入应用程序。"
-            src="assets/guide-install.png"
-          />
+          <img alt="操作示意：从官网下载，安装后打开面面俱答。" src="assets/guide-install.png" />
         </p>
-        <p>
-          Windows 未签名安装包可能触发系统提示；先确认官网来源，不确定时停止并联系维护者。Mac 需要
-          macOS 14.2+；首次放行见文末说明。
-        </p>
+        <p>Windows 未签名安装包可能触发系统提示；先确认官网来源，不确定时停止并联系维护者。</p>
         <h3 id="sec-5c1128">01a 安装时选择路径</h3>
         <p>
           Windows
@@ -399,8 +392,8 @@
           </li>
           <li>
             <strong>本机数据</strong>：设置、资料及记录留在本机，资料和问答本身不加密；系统支持时
-            Key 按当前用户加密（Mac
-            为钥匙串）；加密不可用时可能明文保存，按软件提示处理。授权失效或卸载不等于删除记录，也无法撤回已发给服务商的内容。
+            Key
+            按当前用户加密；加密不可用时可能明文保存，按软件提示处理。授权失效或卸载不等于删除记录，也无法撤回已发给服务商的内容。
           </li>
           <li>
             <strong>资料依据</strong
@@ -411,19 +404,10 @@
             >：上传读不到文字时改用可复制文本；Key/额度错误先检查对应服务或联系维护者；超时先看网络与模型权限。避免连续重复付费操作，反馈只分享脱敏信息。
           </li>
         </ul>
-        <h2 id="sec-521390">Mac 测试版与授权说明</h2>
+        <h2 id="sec-e1d9e2">授权说明</h2>
+        <p>Mac 版还在开发中，没有进入内测，暂不提供下载；开放后会在官网和内测群通知。</p>
         <p>
-          安装操作见第 01 步示意。Apple 芯片选 arm64，Intel 选 x64；需要 macOS
-          14.2+。遇首次阻止打开，按系统“隐私与安全性”的官方流程确认来源后处理，不关闭整机安全检查；公司管理设备可能无法放行。
-        </p>
-        <p>
-          授权使用当前 Mac 显示的设备码，Windows
-          文件不能跨平台复用。麦克风、屏幕及电脑声音权限按系统提示由本人确认；修改后退出重开。默认作答键
-          Cmd+Option+Space，F8 可能需配合 Fn；旧自定义键保持不变。
-        </p>
-        <p>
-          Mac 的会议软件声音、中文朗读、14.2 实机、多屏和全屏会议仍有未验证项。不要把 Windows 图当成
-          Mac 实测截图；先核对自己需要的功能。
+          授权使用当前电脑显示的设备码，换电脑需要重新领取。麦克风、屏幕及电脑声音权限按系统提示由本人确认；修改后退出重开。
         </p>
         <p>
           软件会读取官网的签名停用和版本信息；联网失败不新增停用，也不自动下载安装。有效停用通知或最低版本要求会限制新回答，已有记录可按流程处理。换设备或授权到期请联系维护者，不要删除资料尝试修复。
@@ -437,7 +421,7 @@
     <footer class="site-footer">
       <div class="footer-inner">
         <div>
-          <p><strong>面面俱答</strong> 内测版 1.5，支持 Windows，Mac 版为测试版。</p>
+          <p><strong>面面俱答</strong> 内测版 1.5，支持 Windows，Mac 版开发中。</p>
           <p>回答由 AI 起草，需要你自己核对。仅用于面试准备与练习，不用于任何考试。</p>
         </div>
         <div class="footer-links">
@@ -446,7 +430,8 @@
         </div>
         <p class="footer-en" lang="en">
           MianMianJuDa is a desktop app for preparing, practising and reviewing interviews with your
-          own materials. Answers are drafts for you to verify. Windows, plus a macOS beta.
+          own materials. Answers are drafts for you to verify. Windows only for now; the macOS
+          version is in development.
         </p>
       </div>
     </footer>
